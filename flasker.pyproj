@@ -34,7 +34,6 @@
     <Content Include="Procfile" />
     <Content Include="requirements.txt" />
     <Content Include="runtime.txt" />
-    <Content Include="schema.sql" />
     <Content Include="static\style.css" />
     <Content Include="templates\layout.html" />
     <Content Include="templates\login.html" />
