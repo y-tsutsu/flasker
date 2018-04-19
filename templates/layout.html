@@ -19,6 +19,12 @@
             {% endfor %}
             {% block body %}
             {% endblock %}
+            <hr>
+            <div id="app">
+                [[ message ]]
+            </div>
         </div>
+        <script src="{{ url_for('static', filename='vue/vue.js') }}"></script>
+        <script src="{{ url_for('static', filename='flasker.js') }}"></script>
     </body>
 </html>
