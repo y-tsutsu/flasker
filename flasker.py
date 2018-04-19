@@ -43,15 +43,6 @@ class RestApi(Resource):
         entries = Entry.query.order_by(Entry.id.desc()).all()
         return {e.id: {'title': e.title, 'text': e.text} for e in entries}
 
-    def post(self):
-        assert False, 'Post is not supported!'
-
-    def put(self):
-        assert False, 'Put is not supported!'
-
-    def delete(self):
-        assert False, 'Delete is not supported!'
-
 
 api.add_resource(RestApi, '/api/sample')
 
