@@ -30,3 +30,6 @@ _ReSharper*/
 env
 __pycache__
 web.debug.config
+.vscode/
+build/
+dist/

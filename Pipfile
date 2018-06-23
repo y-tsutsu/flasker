@@ -20,3 +20,4 @@ python_version = "3.6"
 [scripts]
 start = "python flasker.py"
 initdb = "python -c 'import flasker; flasker.init_db()'"
+build = "pyinstaller --add-data 'templates;templates' --add-data 'static;static' flasker.py"
