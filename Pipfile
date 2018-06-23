@@ -1,0 +1,22 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+flask = "*"
+flask-restful = "*"
+flask-sqlalchemy = "*"
+gunicorn = "*"
+psycopg2 = "*"
+
+[dev-packages]
+pyinstaller = "*"
+"autopep8" = "*"
+
+[requires]
+python_version = "3.6"
+
+[scripts]
+start = "python flasker.py"
+initdb = "python -c 'import flasker; flasker.init_db()'"

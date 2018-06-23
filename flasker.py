@@ -4,7 +4,7 @@ import json
 
 from flask import (Flask, abort, flash, g, redirect, render_template, request,
                    session, url_for)
-from flask.ext.sqlalchemy import SQLAlchemy
+from flask_sqlalchemy import SQLAlchemy
 from flask_restful import Api, Resource
 
 # configuration
@@ -14,7 +14,7 @@ PASSWORD = 'admin'
 try:
     SQLALCHEMY_DATABASE_URI = os.environ['DATABASE_URL']
 except:
-    SQLALCHEMY_DATABASE_URI = 'sqlite:///flaskr.db'
+    SQLALCHEMY_DATABASE_URI = 'sqlite:///flasker.db'
 
 # create our little application :)
 app = Flask(__name__)
